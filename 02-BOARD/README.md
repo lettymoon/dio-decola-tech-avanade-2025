@@ -1,8 +1,8 @@
 # Desafio de projeto: Criando seu Board de Tarefas com Java
 
-Alguma imagem virá aqui
+![image](https://github.com/user-attachments/assets/8193da28-597e-46d3-b115-b24ee5859420)
 
-> Diagrama do projeto prático da sub-trilha "Criando seu Board de Tarefas com Java"
+> Diagrama Entidade-Relacionamento do projeto prático da sub-trilha "Integração de Sistemas com Banco de Dados"
 
 ## Tecnologias utilizadas
 
