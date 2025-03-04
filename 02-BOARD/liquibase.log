@@ -1,39 +1,188 @@
-mar. 04, 2025 1:00:54 PM liquibase.changelog
+mar. 04, 2025 1:48:27 PM liquibase.changelog
 INFORMAÇÕES: Reading resource: db/changelog/migrations/db-changelog-202503032340.sql
-mar. 04, 2025 1:00:54 PM liquibase.changelog
+mar. 04, 2025 1:48:27 PM liquibase.changelog
 INFORMAÇÕES: Reading resource: db/changelog/migrations/db-changelog-202504031200.sql
-mar. 04, 2025 1:00:54 PM liquibase.changelog
+mar. 04, 2025 1:48:27 PM liquibase.changelog
 INFORMAÇÕES: Reading resource: db/changelog/migrations/db-changelog-202504031215.sql
-mar. 04, 2025 1:00:54 PM liquibase.changelog
+mar. 04, 2025 1:48:27 PM liquibase.changelog
 INFORMAÇÕES: Reading resource: db/changelog/migrations/db-changelog-202504031220.sql
-mar. 04, 2025 1:00:54 PM liquibase.changelog
+mar. 04, 2025 1:48:27 PM liquibase.changelog
+INFORMAÇÕES: Reading resource: db/changelog/migrations/db-changelog-202504031350.sql
+mar. 04, 2025 1:48:27 PM liquibase.changelog
+INFORMAÇÕES: Creating database history table with name: board.DATABASECHANGELOG
+mar. 04, 2025 1:48:28 PM liquibase.changelog
 INFORMAÇÕES: Reading from board.DATABASECHANGELOG
-Database is up to date, no changesets to execute
-mar. 04, 2025 1:00:54 PM liquibase.changelog
+mar. 04, 2025 1:48:28 PM liquibase.lockservice
+INFORMAÇÕES: Successfully acquired change log lock
+mar. 04, 2025 1:48:28 PM liquibase.command
+INFORMAÇÕES: Using deploymentId: 1106908283
+mar. 04, 2025 1:48:28 PM liquibase.changelog
 INFORMAÇÕES: Reading from board.DATABASECHANGELOG
+Running Changeset: db/changelog/migrations/db-changelog-202503032340.sql::202503032340::letty
+mar. 04, 2025 1:48:28 PM liquibase.changelog
+INFORMAÇÕES: Custom SQL executed
+mar. 04, 2025 1:48:28 PM liquibase.changelog
+INFORMAÇÕES: ChangeSet db/changelog/migrations/db-changelog-202503032340.sql::202503032340::letty ran successfully in 44ms
+Running Changeset: db/changelog/migrations/db-changelog-202504031200.sql::202504031200::letty
+mar. 04, 2025 1:48:28 PM liquibase.changelog
+INFORMAÇÕES: Custom SQL executed
+mar. 04, 2025 1:48:28 PM liquibase.changelog
+INFORMAÇÕES: ChangeSet db/changelog/migrations/db-changelog-202504031200.sql::202504031200::letty ran successfully in 41ms
+Running Changeset: db/changelog/migrations/db-changelog-202504031215.sql::202504031215::letty
+mar. 04, 2025 1:48:28 PM liquibase.changelog
+INFORMAÇÕES: Custom SQL executed
+mar. 04, 2025 1:48:28 PM liquibase.changelog
+INFORMAÇÕES: ChangeSet db/changelog/migrations/db-changelog-202504031215.sql::202504031215::letty ran successfully in 38ms
+Running Changeset: db/changelog/migrations/db-changelog-202504031220.sql::202504031220::letty
+mar. 04, 2025 1:48:28 PM liquibase.changelog
+INFORMAÇÕES: Custom SQL executed
+mar. 04, 2025 1:48:28 PM liquibase.changelog
+INFORMAÇÕES: ChangeSet db/changelog/migrations/db-changelog-202504031220.sql::202504031220::letty ran successfully in 37ms
+Running Changeset: db/changelog/migrations/db-changelog-202504031350.sql::202504031350::letty
+mar. 04, 2025 1:48:28 PM liquibase.changelog
+GRAVE: ChangeSet db/changelog/migrations/db-changelog-202504031350.sql::202504031350::letty encountered an exception.
+liquibase.exception.DatabaseException: Unknown column 'unblock_reason' in 'BLOCKS' [Failed SQL: (1054) ALTER TABLE BLOCKS MODIFY COLUMN unblock_reason VARCHAR(255) NULL]
+	at liquibase.executor.jvm.JdbcExecutor$ExecuteStatementCallback.doInStatement(JdbcExecutor.java:476)
+	at liquibase.executor.jvm.JdbcExecutor.execute(JdbcExecutor.java:83)
+	at liquibase.executor.jvm.JdbcExecutor.execute(JdbcExecutor.java:185)
+	at liquibase.executor.AbstractExecutor.execute(AbstractExecutor.java:141)
+	at liquibase.database.AbstractJdbcDatabase.executeStatements(AbstractJdbcDatabase.java:1189)
+	at liquibase.changelog.ChangeSet.execute(ChangeSet.java:775)
+	at liquibase.changelog.visitor.UpdateVisitor.executeAcceptedChange(UpdateVisitor.java:119)
+	at liquibase.changelog.visitor.UpdateVisitor.visit(UpdateVisitor.java:68)
+	at liquibase.changelog.ChangeLogIterator.lambda$run$0(ChangeLogIterator.java:131)
+	at liquibase.Scope.lambda$child$0(Scope.java:191)
+	at liquibase.Scope.child(Scope.java:200)
+	at liquibase.Scope.child(Scope.java:190)
+	at liquibase.Scope.child(Scope.java:169)
+	at liquibase.changelog.ChangeLogIterator.lambda$run$1(ChangeLogIterator.java:120)
+	at liquibase.Scope.lambda$child$0(Scope.java:191)
+	at liquibase.Scope.child(Scope.java:200)
+	at liquibase.Scope.child(Scope.java:190)
+	at liquibase.Scope.child(Scope.java:169)
+	at liquibase.Scope.child(Scope.java:257)
+	at liquibase.Scope.child(Scope.java:261)
+	at liquibase.changelog.ChangeLogIterator.run(ChangeLogIterator.java:89)
+	at liquibase.command.core.AbstractUpdateCommandStep.lambda$run$0(AbstractUpdateCommandStep.java:113)
+	at liquibase.Scope.lambda$child$0(Scope.java:191)
+	at liquibase.Scope.child(Scope.java:200)
+	at liquibase.Scope.child(Scope.java:190)
+	at liquibase.Scope.child(Scope.java:169)
+	at liquibase.command.core.AbstractUpdateCommandStep.run(AbstractUpdateCommandStep.java:111)
+	at liquibase.command.core.UpdateCommandStep.run(UpdateCommandStep.java:105)
+	at liquibase.command.CommandScope.execute(CommandScope.java:220)
+	at liquibase.Liquibase.lambda$update$0(Liquibase.java:216)
+	at liquibase.Scope.lambda$child$0(Scope.java:191)
+	at liquibase.Scope.child(Scope.java:200)
+	at liquibase.Scope.child(Scope.java:190)
+	at liquibase.Scope.child(Scope.java:169)
+	at liquibase.Liquibase.runInScope(Liquibase.java:1290)
+	at liquibase.Liquibase.update(Liquibase.java:205)
+	at liquibase.Liquibase.update(Liquibase.java:188)
+	at liquibase.Liquibase.update(Liquibase.java:175)
+	at liquibase.Liquibase.update(Liquibase.java:155)
+	at me.dio.decola_tech_2025.persistence.migration.MigrationStrategy.executeMigration(MigrationStrategy.java:36)
+	at me.dio.decola_tech_2025.DecolaTech2025Application.main(DecolaTech2025Application.java:14)
+Caused by: java.sql.SQLSyntaxErrorException: Unknown column 'unblock_reason' in 'BLOCKS'
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:112)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:114)
+	at com.mysql.cj.jdbc.StatementImpl.executeInternal(StatementImpl.java:837)
+	at com.mysql.cj.jdbc.StatementImpl.execute(StatementImpl.java:685)
+	at liquibase.executor.jvm.JdbcExecutor$ExecuteStatementCallback.doInStatement(JdbcExecutor.java:470)
+	... 40 more
+
 
 UPDATE SUMMARY
-Run:                          0
-Previously run:               4
+Run:                          4
+Previously run:               0
 Filtered out:                 0
 -------------------------------
-Total change sets:            4
+Total change sets:            5
 
-mar. 04, 2025 1:00:54 PM liquibase.util
+mar. 04, 2025 1:48:28 PM liquibase.util
 INFORMAÇÕES: UPDATE SUMMARY
-mar. 04, 2025 1:00:54 PM liquibase.util
-INFORMAÇÕES: Run:                          0
-mar. 04, 2025 1:00:54 PM liquibase.util
-INFORMAÇÕES: Previously run:               4
-mar. 04, 2025 1:00:54 PM liquibase.util
+mar. 04, 2025 1:48:28 PM liquibase.util
+INFORMAÇÕES: Run:                          4
+mar. 04, 2025 1:48:28 PM liquibase.util
+INFORMAÇÕES: Previously run:               0
+mar. 04, 2025 1:48:28 PM liquibase.util
 INFORMAÇÕES: Filtered out:                 0
-mar. 04, 2025 1:00:54 PM liquibase.util
+mar. 04, 2025 1:48:28 PM liquibase.util
 INFORMAÇÕES: -------------------------------
-mar. 04, 2025 1:00:54 PM liquibase.util
-INFORMAÇÕES: Total change sets:            4
-mar. 04, 2025 1:00:54 PM liquibase.util
+mar. 04, 2025 1:48:28 PM liquibase.util
+INFORMAÇÕES: Total change sets:            5
+mar. 04, 2025 1:48:28 PM liquibase.util
 INFORMAÇÕES: Update summary generated
-mar. 04, 2025 1:00:54 PM liquibase.lockservice
+mar. 04, 2025 1:48:28 PM liquibase.command
+INFORMAÇÕES: Update command encountered an exception.
+mar. 04, 2025 1:48:28 PM liquibase.lockservice
 INFORMAÇÕES: Successfully released change log lock
-mar. 04, 2025 1:00:54 PM liquibase.command
+mar. 04, 2025 1:48:28 PM liquibase.command
+INFORMAÇÕES: Logging exception.
+ERROR: Exception Details
+ERROR: Exception Primary Class:  SQLSyntaxErrorException
+ERROR: Exception Primary Reason:  Unknown column 'unblock_reason' in 'BLOCKS'
+ERROR: Exception Primary Source:  MySQL 8.4.4
+mar. 04, 2025 1:48:28 PM liquibase.command
 INFORMAÇÕES: Command execution complete
+liquibase.exception.CommandExecutionException: liquibase.exception.LiquibaseException: liquibase.exception.MigrationFailedException: Migration failed for changeset db/changelog/migrations/db-changelog-202504031350.sql::202504031350::letty:
+     Reason: liquibase.exception.DatabaseException: Unknown column 'unblock_reason' in 'BLOCKS' [Failed SQL: (1054) ALTER TABLE BLOCKS MODIFY COLUMN unblock_reason VARCHAR(255) NULL]
+	at liquibase.command.CommandScope.execute(CommandScope.java:258)
+	at liquibase.Liquibase.lambda$update$0(Liquibase.java:216)
+	at liquibase.Scope.lambda$child$0(Scope.java:191)
+	at liquibase.Scope.child(Scope.java:200)
+	at liquibase.Scope.child(Scope.java:190)
+	at liquibase.Scope.child(Scope.java:169)
+	at liquibase.Liquibase.runInScope(Liquibase.java:1290)
+	at liquibase.Liquibase.update(Liquibase.java:205)
+	at liquibase.Liquibase.update(Liquibase.java:188)
+	at liquibase.Liquibase.update(Liquibase.java:175)
+	at liquibase.Liquibase.update(Liquibase.java:155)
+	at me.dio.decola_tech_2025.persistence.migration.MigrationStrategy.executeMigration(MigrationStrategy.java:36)
+	at me.dio.decola_tech_2025.DecolaTech2025Application.main(DecolaTech2025Application.java:14)
+Caused by: liquibase.exception.LiquibaseException: liquibase.exception.MigrationFailedException: Migration failed for changeset db/changelog/migrations/db-changelog-202504031350.sql::202504031350::letty:
+     Reason: liquibase.exception.DatabaseException: Unknown column 'unblock_reason' in 'BLOCKS' [Failed SQL: (1054) ALTER TABLE BLOCKS MODIFY COLUMN unblock_reason VARCHAR(255) NULL]
+	at liquibase.changelog.ChangeLogIterator.run(ChangeLogIterator.java:148)
+	at liquibase.command.core.AbstractUpdateCommandStep.lambda$run$0(AbstractUpdateCommandStep.java:113)
+	at liquibase.Scope.lambda$child$0(Scope.java:191)
+	at liquibase.Scope.child(Scope.java:200)
+	at liquibase.Scope.child(Scope.java:190)
+	at liquibase.Scope.child(Scope.java:169)
+	at liquibase.command.core.AbstractUpdateCommandStep.run(AbstractUpdateCommandStep.java:111)
+	at liquibase.command.core.UpdateCommandStep.run(UpdateCommandStep.java:105)
+	at liquibase.command.CommandScope.execute(CommandScope.java:220)
+	... 12 more
+Caused by: liquibase.exception.MigrationFailedException: Migration failed for changeset db/changelog/migrations/db-changelog-202504031350.sql::202504031350::letty:
+     Reason: liquibase.exception.DatabaseException: Unknown column 'unblock_reason' in 'BLOCKS' [Failed SQL: (1054) ALTER TABLE BLOCKS MODIFY COLUMN unblock_reason VARCHAR(255) NULL]
+	at liquibase.changelog.ChangeSet.execute(ChangeSet.java:819)
+	at liquibase.changelog.visitor.UpdateVisitor.executeAcceptedChange(UpdateVisitor.java:119)
+	at liquibase.changelog.visitor.UpdateVisitor.visit(UpdateVisitor.java:68)
+	at liquibase.changelog.ChangeLogIterator.lambda$run$0(ChangeLogIterator.java:131)
+	at liquibase.Scope.lambda$child$0(Scope.java:191)
+	at liquibase.Scope.child(Scope.java:200)
+	at liquibase.Scope.child(Scope.java:190)
+	at liquibase.Scope.child(Scope.java:169)
+	at liquibase.changelog.ChangeLogIterator.lambda$run$1(ChangeLogIterator.java:120)
+	at liquibase.Scope.lambda$child$0(Scope.java:191)
+	at liquibase.Scope.child(Scope.java:200)
+	at liquibase.Scope.child(Scope.java:190)
+	at liquibase.Scope.child(Scope.java:169)
+	at liquibase.Scope.child(Scope.java:257)
+	at liquibase.Scope.child(Scope.java:261)
+	at liquibase.changelog.ChangeLogIterator.run(ChangeLogIterator.java:89)
+	... 20 more
+Caused by: liquibase.exception.DatabaseException: Unknown column 'unblock_reason' in 'BLOCKS' [Failed SQL: (1054) ALTER TABLE BLOCKS MODIFY COLUMN unblock_reason VARCHAR(255) NULL]
+	at liquibase.executor.jvm.JdbcExecutor$ExecuteStatementCallback.doInStatement(JdbcExecutor.java:476)
+	at liquibase.executor.jvm.JdbcExecutor.execute(JdbcExecutor.java:83)
+	at liquibase.executor.jvm.JdbcExecutor.execute(JdbcExecutor.java:185)
+	at liquibase.executor.AbstractExecutor.execute(AbstractExecutor.java:141)
+	at liquibase.database.AbstractJdbcDatabase.executeStatements(AbstractJdbcDatabase.java:1189)
+	at liquibase.changelog.ChangeSet.execute(ChangeSet.java:775)
+	... 35 more
+Caused by: java.sql.SQLSyntaxErrorException: Unknown column 'unblock_reason' in 'BLOCKS'
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:112)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:114)
+	at com.mysql.cj.jdbc.StatementImpl.executeInternal(StatementImpl.java:837)
+	at com.mysql.cj.jdbc.StatementImpl.execute(StatementImpl.java:685)
+	at liquibase.executor.jvm.JdbcExecutor$ExecuteStatementCallback.doInStatement(JdbcExecutor.java:470)
+	... 40 more
