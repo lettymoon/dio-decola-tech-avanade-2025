@@ -1,6 +1,7 @@
 package me.dio.decola_tech_2025;
 
 import me.dio.decola_tech_2025.persistence.migration.MigrationStrategy;
+import me.dio.decola_tech_2025.ui.MainMenu;
 
 import java.sql.SQLException;
 
@@ -12,6 +13,7 @@ public class DecolaTech2025Application {
 		try(var connection = getConnection()){
 			new MigrationStrategy(connection).executeMigration();
 		}
+		new MainMenu().execute();
 	}
 
 }

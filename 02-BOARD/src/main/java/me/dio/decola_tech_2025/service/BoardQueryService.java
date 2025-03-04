@@ -1,5 +1,6 @@
 package me.dio.decola_tech_2025.service;
 
+import me.dio.decola_tech_2025.dto.BoardDetailsDTO;
 import me.dio.decola_tech_2025.persistence.dao.BoardColumnDAO;
 import me.dio.decola_tech_2025.persistence.dao.BoardDAO;
 import me.dio.decola_tech_2025.persistence.entity.BoardEntity;
@@ -26,4 +27,16 @@ public class BoardQueryService {
         return Optional.empty();
     }
 
+    public Optional<BoardDetailsDTO> showBoardDetails(final Long id) throws SQLException {
+        var dao = new BoardDAO(connection);
+        var boardColumnDAO = new BoardColumnDAO(connection);
+        var optional = dao.findById(id);
+        if (optional.isPresent()){
+            var entity = optional.get();
+            var columns = boardColumnDAO.findByBoardIdWithDetails(entity.getId());
+            var dto = new BoardDetailsDTO(entity.getId(), entity.getName(), columns);
+            return Optional.of(dto);
+        }
+        return Optional.empty();
+    }
 }
