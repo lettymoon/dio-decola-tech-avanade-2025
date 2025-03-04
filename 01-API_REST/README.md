@@ -57,7 +57,9 @@ classDiagram
 
 Com o `profile` bem configurado, a porta exposta padrão é a `8080`.
 
-Para acessar o banco de dados H2, entre no link [http://localhost:8080/h2-console/](http://localhost:8080/h2-console/) com as seguintes configurações
+Para visualização dos endpoints, uma interface pronta utilizando `Swagger` pode ser acessada no link: http://localhost:8080/swagger-ui/index.html.
+
+Para acessar o banco de dados H2, entre no link http://localhost:8080/h2-console/ com as seguintes configurações
 
 - JDBC URL: jdbc:h2:mem:dta2025
 - User Name: dta2025
