@@ -1,45 +1,45 @@
-mar. 04, 2025 1:48:27 PM liquibase.changelog
+mar. 04, 2025 2:04:55 PM liquibase.changelog
 INFORMAÇÕES: Reading resource: db/changelog/migrations/db-changelog-202503032340.sql
-mar. 04, 2025 1:48:27 PM liquibase.changelog
+mar. 04, 2025 2:04:55 PM liquibase.changelog
 INFORMAÇÕES: Reading resource: db/changelog/migrations/db-changelog-202504031200.sql
-mar. 04, 2025 1:48:27 PM liquibase.changelog
+mar. 04, 2025 2:04:55 PM liquibase.changelog
 INFORMAÇÕES: Reading resource: db/changelog/migrations/db-changelog-202504031215.sql
-mar. 04, 2025 1:48:27 PM liquibase.changelog
+mar. 04, 2025 2:04:55 PM liquibase.changelog
 INFORMAÇÕES: Reading resource: db/changelog/migrations/db-changelog-202504031220.sql
-mar. 04, 2025 1:48:27 PM liquibase.changelog
+mar. 04, 2025 2:04:55 PM liquibase.changelog
 INFORMAÇÕES: Reading resource: db/changelog/migrations/db-changelog-202504031350.sql
-mar. 04, 2025 1:48:27 PM liquibase.changelog
+mar. 04, 2025 2:04:55 PM liquibase.changelog
 INFORMAÇÕES: Creating database history table with name: board.DATABASECHANGELOG
-mar. 04, 2025 1:48:28 PM liquibase.changelog
+mar. 04, 2025 2:04:55 PM liquibase.changelog
 INFORMAÇÕES: Reading from board.DATABASECHANGELOG
-mar. 04, 2025 1:48:28 PM liquibase.lockservice
+mar. 04, 2025 2:04:55 PM liquibase.lockservice
 INFORMAÇÕES: Successfully acquired change log lock
-mar. 04, 2025 1:48:28 PM liquibase.command
-INFORMAÇÕES: Using deploymentId: 1106908283
-mar. 04, 2025 1:48:28 PM liquibase.changelog
+mar. 04, 2025 2:04:55 PM liquibase.command
+INFORMAÇÕES: Using deploymentId: 1107895678
+mar. 04, 2025 2:04:55 PM liquibase.changelog
 INFORMAÇÕES: Reading from board.DATABASECHANGELOG
 Running Changeset: db/changelog/migrations/db-changelog-202503032340.sql::202503032340::letty
-mar. 04, 2025 1:48:28 PM liquibase.changelog
+mar. 04, 2025 2:04:55 PM liquibase.changelog
 INFORMAÇÕES: Custom SQL executed
-mar. 04, 2025 1:48:28 PM liquibase.changelog
-INFORMAÇÕES: ChangeSet db/changelog/migrations/db-changelog-202503032340.sql::202503032340::letty ran successfully in 44ms
+mar. 04, 2025 2:04:55 PM liquibase.changelog
+INFORMAÇÕES: ChangeSet db/changelog/migrations/db-changelog-202503032340.sql::202503032340::letty ran successfully in 100ms
 Running Changeset: db/changelog/migrations/db-changelog-202504031200.sql::202504031200::letty
-mar. 04, 2025 1:48:28 PM liquibase.changelog
+mar. 04, 2025 2:04:55 PM liquibase.changelog
 INFORMAÇÕES: Custom SQL executed
-mar. 04, 2025 1:48:28 PM liquibase.changelog
-INFORMAÇÕES: ChangeSet db/changelog/migrations/db-changelog-202504031200.sql::202504031200::letty ran successfully in 41ms
+mar. 04, 2025 2:04:55 PM liquibase.changelog
+INFORMAÇÕES: ChangeSet db/changelog/migrations/db-changelog-202504031200.sql::202504031200::letty ran successfully in 37ms
 Running Changeset: db/changelog/migrations/db-changelog-202504031215.sql::202504031215::letty
-mar. 04, 2025 1:48:28 PM liquibase.changelog
+mar. 04, 2025 2:04:55 PM liquibase.changelog
 INFORMAÇÕES: Custom SQL executed
-mar. 04, 2025 1:48:28 PM liquibase.changelog
-INFORMAÇÕES: ChangeSet db/changelog/migrations/db-changelog-202504031215.sql::202504031215::letty ran successfully in 38ms
+mar. 04, 2025 2:04:55 PM liquibase.changelog
+INFORMAÇÕES: ChangeSet db/changelog/migrations/db-changelog-202504031215.sql::202504031215::letty ran successfully in 34ms
 Running Changeset: db/changelog/migrations/db-changelog-202504031220.sql::202504031220::letty
-mar. 04, 2025 1:48:28 PM liquibase.changelog
+mar. 04, 2025 2:04:55 PM liquibase.changelog
 INFORMAÇÕES: Custom SQL executed
-mar. 04, 2025 1:48:28 PM liquibase.changelog
-INFORMAÇÕES: ChangeSet db/changelog/migrations/db-changelog-202504031220.sql::202504031220::letty ran successfully in 37ms
+mar. 04, 2025 2:04:55 PM liquibase.changelog
+INFORMAÇÕES: ChangeSet db/changelog/migrations/db-changelog-202504031220.sql::202504031220::letty ran successfully in 38ms
 Running Changeset: db/changelog/migrations/db-changelog-202504031350.sql::202504031350::letty
-mar. 04, 2025 1:48:28 PM liquibase.changelog
+mar. 04, 2025 2:04:56 PM liquibase.changelog
 GRAVE: ChangeSet db/changelog/migrations/db-changelog-202504031350.sql::202504031350::letty encountered an exception.
 liquibase.exception.DatabaseException: Unknown column 'unblock_reason' in 'BLOCKS' [Failed SQL: (1054) ALTER TABLE BLOCKS MODIFY COLUMN unblock_reason VARCHAR(255) NULL]
 	at liquibase.executor.jvm.JdbcExecutor$ExecuteStatementCallback.doInStatement(JdbcExecutor.java:476)
@@ -99,31 +99,31 @@ Filtered out:                 0
 -------------------------------
 Total change sets:            5
 
-mar. 04, 2025 1:48:28 PM liquibase.util
+mar. 04, 2025 2:04:56 PM liquibase.util
 INFORMAÇÕES: UPDATE SUMMARY
-mar. 04, 2025 1:48:28 PM liquibase.util
+mar. 04, 2025 2:04:56 PM liquibase.util
 INFORMAÇÕES: Run:                          4
-mar. 04, 2025 1:48:28 PM liquibase.util
+mar. 04, 2025 2:04:56 PM liquibase.util
 INFORMAÇÕES: Previously run:               0
-mar. 04, 2025 1:48:28 PM liquibase.util
+mar. 04, 2025 2:04:56 PM liquibase.util
 INFORMAÇÕES: Filtered out:                 0
-mar. 04, 2025 1:48:28 PM liquibase.util
+mar. 04, 2025 2:04:56 PM liquibase.util
 INFORMAÇÕES: -------------------------------
-mar. 04, 2025 1:48:28 PM liquibase.util
+mar. 04, 2025 2:04:56 PM liquibase.util
 INFORMAÇÕES: Total change sets:            5
-mar. 04, 2025 1:48:28 PM liquibase.util
+mar. 04, 2025 2:04:56 PM liquibase.util
 INFORMAÇÕES: Update summary generated
-mar. 04, 2025 1:48:28 PM liquibase.command
+mar. 04, 2025 2:04:56 PM liquibase.command
 INFORMAÇÕES: Update command encountered an exception.
-mar. 04, 2025 1:48:28 PM liquibase.lockservice
+mar. 04, 2025 2:04:56 PM liquibase.lockservice
 INFORMAÇÕES: Successfully released change log lock
-mar. 04, 2025 1:48:28 PM liquibase.command
+mar. 04, 2025 2:04:56 PM liquibase.command
 INFORMAÇÕES: Logging exception.
 ERROR: Exception Details
 ERROR: Exception Primary Class:  SQLSyntaxErrorException
 ERROR: Exception Primary Reason:  Unknown column 'unblock_reason' in 'BLOCKS'
 ERROR: Exception Primary Source:  MySQL 8.4.4
-mar. 04, 2025 1:48:28 PM liquibase.command
+mar. 04, 2025 2:04:56 PM liquibase.command
 INFORMAÇÕES: Command execution complete
 liquibase.exception.CommandExecutionException: liquibase.exception.LiquibaseException: liquibase.exception.MigrationFailedException: Migration failed for changeset db/changelog/migrations/db-changelog-202504031350.sql::202504031350::letty:
      Reason: liquibase.exception.DatabaseException: Unknown column 'unblock_reason' in 'BLOCKS' [Failed SQL: (1054) ALTER TABLE BLOCKS MODIFY COLUMN unblock_reason VARCHAR(255) NULL]
