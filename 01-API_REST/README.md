@@ -48,6 +48,22 @@ classDiagram
 - Spring JPA
 - Banco de dados H2 || PostgreSQL
 
+## Observações importantes
+
+- O projeto utiliza o padrão de arquivos `.yaml` ao inves de `application.properties`
+  - Portanto, é preciso configurar um `profile` com a variável de ambiente `SPRING_PROFILES_ACTIVE` com valor `dev` para execução local ou `prod` para ambiente em produção.
+
+## Executando em ambiente local
+
+Com o `profile` bem configurado, a porta exposta padrão é a `8080`.
+
+Para acessar o banco de dados H2, entre no link [http://localhost:8080/h2-console/](http://localhost:8080/h2-console/) com as seguintes configurações
+
+- JDBC URL: jdbc:h2:mem:dta2025
+- User Name: dta2025
+
+O `Password` é vazio!
+
 ## Licença
 
 Este projeto está sob licença. Consulte [LICENSE](LICENSE) para obter mais informações.
