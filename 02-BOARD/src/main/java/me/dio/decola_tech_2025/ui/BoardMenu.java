@@ -1,5 +1,6 @@
 package me.dio.decola_tech_2025.ui;
 
+import me.dio.decola_tech_2025.dto.BoardColumnInfoDTO;
 import me.dio.decola_tech_2025.persistence.entity.BoardColumnEntity;
 import me.dio.decola_tech_2025.persistence.entity.BoardEntity;
 import lombok.AllArgsConstructor;
@@ -68,7 +69,17 @@ public class BoardMenu {
         }
     }
 
-    private void moveCardToNextColumn() {
+    private void moveCardToNextColumn() throws SQLException {
+        System.out.println("Informe o id do card que deseja mover para a próxima coluna");
+        var cardId = scanner.nextLong();
+        var boardColumnsInfo = entity.getBoardColumns().stream()
+                .map(bc -> new BoardColumnInfoDTO(bc.getId(), bc.getOrder(), bc.getKind()))
+                .toList();
+        try(var connection = getConnection()){
+            new CardService(connection).moveToNextColumn(cardId, boardColumnsInfo);
+        } catch (RuntimeException ex){
+            System.out.println(ex.getMessage());
+        }
     }
 
     private void blockCard() {
