@@ -52,6 +52,7 @@ classDiagram
 
 - O projeto utiliza o padrão de arquivos `.yaml` ao inves de `application.properties`
   - Portanto, é preciso configurar um `profile` com a variável de ambiente `SPRING_PROFILES_ACTIVE` com valor `dev` para execução local ou `prod` para ambiente em produção.
+- A publicação da API em produção foi possível mas manter a mesma neste estado não é possível, pois, a railway encerrou seu nível gratuito.
 
 ## Executando em ambiente local
 
@@ -66,6 +67,12 @@ Para acessar o banco de dados H2, entre no link http://localhost:8080/h2-console
 
 O `Password` é vazio!
 
+## Executando em ambiente de produção
+
+Realizei a publicação da API no site `railway`, entretanto, na época em que a video-aula do curso oferecido pela DIO foi gravada, a plataforma `railway` ainda era `free tier` e hoje não é mais! Logo, publiquei a API, validei e matei a mesma para evitar cobranças futuras.
+
+<img src="https://github.com/user-attachments/assets/c212c9de-8730-4f59-98db-b40ef8f0e65a" width="600px"/>
+
 ## Licença
 
-Este projeto está sob licença. Consulte [LICENSE](LICENSE) para obter mais informações.
+Este projeto está sob licença. Consulte [LICENSE](../LICENSE) para obter mais informações.
