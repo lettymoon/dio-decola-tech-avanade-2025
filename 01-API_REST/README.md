@@ -47,6 +47,8 @@ classDiagram
 - Spring Web
 - Spring JPA
 - Banco de dados H2 || PostgreSQL
+- Swagger
+- Railway
 
 ## Observações importantes
 
