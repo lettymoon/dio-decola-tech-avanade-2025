@@ -22,7 +22,9 @@ Alguma imagem virá aqui
 
 É necessário ter uma instância do MySQL rodando, para isso, tendo o Docker instalado, execute:
 
-`docker run --name mysql-local -e MYSQL_ROOT_PASSWORD=root -e MYSQL_DATABASE=board -e MYSQL_USER=board -e MYSQL_PASSWORD=board -p 3306:3306 -d mysql:8`
+```bash
+docker run --name mysql-local -e MYSQL_ROOT_PASSWORD=root -e MYSQL_DATABASE=board -e MYSQL_USER=board -e MYSQL_PASSWORD=board -p 3306:3306 -d mysql:8
+```
 
 Isso criará um container chamado `mysql-local` rodando o MySQL 8, com o banco board e as credenciais:
 
@@ -33,7 +35,9 @@ Isso criará um container chamado `mysql-local` rodando o MySQL 8, com o banco b
 
 Para encerrar a instância deste container docker, execute:
 
-`docker rm -f mysql-local`
+```bash
+docker rm -f mysql-local
+```
 
 Com o Container docker em execução, você pode iniciar o projeto e ser feliz!
 
