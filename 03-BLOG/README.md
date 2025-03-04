@@ -1,10 +1,10 @@
 # Desafio de projeto: Criando um Blog com Angular
 
-| Layout com marcações | Resultado Final |
+| Resultado do Curso | Resultado Adaptado por mim |
 | :-: | :-: |
-| ![layout](./ideas/layout-componentizado.png) | ![layout](https://github.com/user-attachments/assets/f182e26c-a69b-48df-afbd-094178987725) |
+| ![layout](https://github.com/user-attachments/assets/f182e26c-a69b-48df-afbd-094178987725) | ![layout](https://github.com/user-attachments/assets/6defe549-481c-4dd0-b10e-290c83bd3da6) |
 
-> Layout com marcações e Tela inicial do projeto prático da sub-trilha "Construindo Aplicações Angular"
+> Tela inicial do curso e do meu código adaptado do projeto prático da sub-trilha "Construindo Aplicações Angular"
 
 ## Observações importantes
 
