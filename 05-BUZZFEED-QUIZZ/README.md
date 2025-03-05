@@ -9,6 +9,7 @@
 ## Observações importantes
 
 - A fim de expandir meus conhecimentos em desenvolvimento, fiz deploy do site na `Vercel`: https://brontequizz.vercel.app/
+    - Desabilitei a função de [`deploy-on-push`](vercel.json) para evitar deploys desnecessários dado a arquitetura do repositório atual.
 - Este projeto não foi codificado por mim. Dado a versão do Angular utilizada no curso (14) e a versão atual (19) terem muitas diferenças e incopatibilidades.
 - Apesar disto, modifiquei o codigo para que ficasse um pouco mais com minha cara.
 
