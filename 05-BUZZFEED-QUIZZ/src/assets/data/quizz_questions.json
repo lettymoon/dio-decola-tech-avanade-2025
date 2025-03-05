@@ -1,55 +1,61 @@
 {
-  "title":"Você seria um heroi ou vilão ?",
+  "title":"Qual livro das irmãs Brontë mais combina com você?",
   "questions":[
     {
       "id":1,
-      "question": "Qual super poder você escolheria ?",
+      "question": "Como você descreveria sua visão sobre o amor?",
       "options":[
-        {"id": 1, "name":"Raios-Lasers", "alias":"A"},
-        {"id": 2, "name":"Voar", "alias":"B"},
-        {"id": 3, "name":"Explodir coisas", "alias":"A"},
-        {"id": 4, "name":"Curar feridas", "alias":"B"},
-        {"id": 5, "name":"Soltar fogo pelas mãos", "alias":"A"}
+        {"id": 1, "name":"Intenso, apaixonado e muitas vezes trágico.", "alias":"A"},
+        {"id": 2, "name":"Misterioso, com segredos a serem revelados.", "alias":"B"},
+        {"id": 3, "name":"Baseado no respeito e crescimento mútuo.", "alias":"C"},
+        {"id": 4, "name":"Cheio de desafios, mas sempre possível.", "alias":"D"}
       ]
     },
     {
       "id":2,
-      "question": "Quem você salvaria primeiro ?",
+      "question": "Qual dessas paisagens mais te atrai?",
       "options":[
-        {"id": 1, "name":"Crianças", "alias":"A"},
-        {"id": 2, "name":"Idosos", "alias":"A"},
-        {"id": 3, "name":"Não saberia escolher", "alias":"B"}
+        {"id": 1, "name":"Um charco sombrio e isolado, onde o vento uiva sem parar.", "alias":"A"},
+        {"id": 2, "name":"Uma mansão antiga cheia de mistérios.", "alias":"B"},
+        {"id": 3, "name":"Campos vastos e colinas suaves, com liberdade para explorar.", "alias":"C"},
+        {"id": 3, "name":"Uma cidade movimentada, cheia de possibilidades.", "alias":"D"}
       ]
     },
     {
       "id":3,
-      "question": "Qual a sua maior preocupação ao enfretar outro super ser ?",
+      "question": "Como você lida com desafios?",
       "options":[
-        {"id": 1, "name":"Não destruir prédios", "alias":"B"},
-        {"id": 2, "name":"Socar a cara do inimigo", "alias":"A"},
-        {"id": 3, "name":"Não sujar meu traje", "alias":"A"},
-        {"id": 4, "name":"Não deixar ninguém se ferir", "alias":"B"}
+        {"id": 1, "name":"Com paixão e teimosia, não importa as consequências.", "alias":"A"},
+        {"id": 2, "name":"Com inteligência e observação, esperando o momento certo", "alias":"B"},
+        {"id": 3, "name":"Com perseverança e moralidade, mantendo minha dignidade.", "alias":"C"},
+        {"id": 4, "name":"Com coragem e otimismo, encarando tudo de frente.", "alias":"D"}
       ]
     },
     {
       "id":4,
-      "question": "Qual o seu maior foco ?",
+      "question": "Qual dessas frases poderia ser sua?",
       "options":[
-        {"id": 1, "name":"Ficar rico com poderes", "alias":"A"},
-        {"id": 2, "name":"Salvar a cidade", "alias":"B"}
+        {"id": 1, "name":"'Se não posso ter meu amor, prefiro o sofrimento.'", "alias":"A"},
+        {"id": 2, "name":"'Nem tudo é o que parece. O passado sempre volta.'", "alias":"B"},
+        {"id": 2, "name":"'Mesmo nas piores situações, posso me manter firme.'", "alias":"C"},
+        {"id": 2, "name":"'Com determinação, posso construir meu próprio destino.'", "alias":"D"}
       ]
     },
     {
       "id":5,
-      "question": "Qual o seu apelido de super ser ?",
+      "question": "Qual seria seu maior obstáculo em uma história?",
       "options":[
-        {"id": 1, "name":"O Terrivel", "alias":"A"},
-        {"id": 2, "name":"Amigo da vizinhança", "alias":"B"}
+        {"id": 1, "name":"Um amor impossível e destrutivo.", "alias":"A"},
+        {"id": 2, "name":"Um segredo do passado que ameaça o presente.", "alias":"B"},
+        {"id": 2, "name":"O preconceito e as dificuldades sociais.", "alias":"C"},
+        {"id": 2, "name":"As dificuldades de provar meu valor em um mundo injusto.", "alias":"D"}
       ]
     }
   ],
   "results":{
-    "A": "Você muito provavelmente seria um super vilão!",
-    "B": "Você muito provavelmente seria um super Herói!"
+    "A": "O Morro dos Ventos Uivantes de Emily Brontë",
+    "B": "A Senhora de Wildfell Hall de Anne Brontë",
+    "C": "Jane Eyre de Charlotte Brontë",
+    "D": "Shirley de Charlotte Brontë"
   }
 }
