@@ -1,8 +1,14 @@
 package me.dio.barber_shop_api.response;
 
+import com.fasterxml.jackson.annotation.JsonProperty;
+
 public record ClientScheduleAppointmentDetailResponse(
+        @JsonProperty("id")
         Long id,
+        @JsonProperty("name")
         String name,
+        @JsonProperty("email")
         String email,
+        @JsonProperty("phone")
         String phone
 ) {}
