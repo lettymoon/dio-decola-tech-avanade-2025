@@ -20,9 +20,9 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  border:1px solid #4224d9;
+  border:1px solid #58331f;
   border-radius: 8px;
-  background-color: #644ED2;
+  background-color:	#6f4e37;
   width: 100%;
   height: 200px;
   font-size: 20px;
@@ -41,7 +41,7 @@
 .btn-option{
   background-color: transparent;
   border-radius: 8px;
-  border: 1px solid #18ab29;
+  border: 1px solid #58331f;
   width: 50%;
   display: inline-block;
   cursor: pointer;
@@ -54,7 +54,7 @@
 }
 
 .btn-option:hover{
-  background-color: #5cbf2a;
+  background-color: #ffc1c1;
 }
 
 .btn-option:active{
