@@ -33,9 +33,9 @@ classDiagram
     }
 
     User "1" *-- "1" Account
-    User "1" *-- "0..n" Feature
+    User "1" *-- "n" Feature
     User "1" *-- "1" Card
-    User "1" *-- "0..n" News
+    User "1" *-- "n" News
 ```
 
 > Diagrama de classes do projeto prático da sub-trilha "Desenvolvimento de APIs com Spring Framework"
