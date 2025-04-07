@@ -1,5 +1,6 @@
 package me.dio.decola_tech_2025.controller;
 
+import lombok.RequiredArgsConstructor;
 import me.dio.decola_tech_2025.domain.model.User;
 import me.dio.decola_tech_2025.service.UserService;
 import org.springframework.http.ResponseEntity;
@@ -10,13 +11,10 @@ import java.net.URI;
 
 @RestController
 @RequestMapping("/users")
+@RequiredArgsConstructor
 public class UserController {
 
     private final UserService userService;
-
-    public UserController(UserService userService) {
-        this.userService = userService;
-    }
 
     @GetMapping("/{id}")
     public ResponseEntity<User> findById(@PathVariable Long id) {
